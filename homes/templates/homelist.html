@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            .home{
+                display: flex;
+                flex-direction:row;
+                width: 200px;
+                height: 100px;
+            }
+            image{
+                width: 80px;
+                height: 80px;
+                margin: 10px;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <div class="all">
+            {% for home in homes %}
+               <div class="cad">
+
+                <div class="home">
+                    <img src="{{home.bf_image.url}}">
+                    <img src="{{home.bac_image.url}}">
+                 </div>
+                 <div class="data">
+                 <p>name_owner:{{home.name_owner}}</p>
+                 <p>location: {{home.location}}
+                 <p>price:${{home.price}}</p>
+                 <p>numberof_home:{{home.numberof_home}}</p>
+                 </div>
+                 
+                 
+                 
+
+                 
+
+                 <button ><a href="{% url 'rentercreat' %}">apply</a></button>
+
+                 
+        
+       
+
+                </div>
+            {% endfor %}
+
+    </body>
+</html>

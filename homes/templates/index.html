@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index</title>
+        <style>
+            body{
+                
+                background-color: rgb(217, 224, 205);
+            }
+            #nav{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height: 50px;
+                box-shadow:  0px 4px 8px rgba(83, 72, 82, 0.7);
+                background-color: rgb(217, 224, 205);
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+               
+                box-shadow:  0px 4px 8px rgba(83, 72, 82, 0.7);
+                background-color: rgb(217, 224, 205);
+
+            }
+            li{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0px 20px;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 16px;
+                text-transform: capitalize;
+
+            }
+            #top{
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+                margin-left: 200px;
+                margin-right: 200px;
+                box-shadow:  0px 4px 8px rgba(83, 72, 82, 0.7);
+                background-color: rgb(217, 224, 205);
+                
+            }
+            
+            p{
+                margin: 30px;
+                width: 80px;
+                height: 30px;
+                background-color: inherit;
+            }
+           
+
+        </style>
+
+    </head>
+    <body>
+        <div id="nav">
+            <h2>feel free</h2>
+            <ul>
+                <li><a href="{% url 'homecreat' %}">cerat home</a></li>
+                <li><a href="{% url 'rentercreat' %}">apply for rent</a></li>
+                <li><a href="{% url 'homelist' %}">homelist</a></li>
+                <li>about us</li>
+            </ul>
+        </div>
+        <div id="top">
+            <div class="list">
+                <p><a href="{% url 'homecreat' %}"><button>home</button></a></p>
+                <p><a href="{% url 'rentercreat' %}"><button>rent</button></a></p>
+            </div>
+           
+        </div>
+        <div id="footer">
+            <div id="us">
+                <h3>about us</h3>
+                <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia placeat excepturi debitis ab sin<br>
+                    t dignissimos quaerat quasi sit, ad deleniti quas iste doloremque fuga sunt odit earum officia!<br>
+                     Laboriosam, fugit<br>.
+                </strong>
+           </div>
+
+           <h3>vission</h3>
+           <trong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, quisquam ullam repellat in,<br>
+             eum veniam consequuntur maiores,<br>
+             eius quo enim dolorem asperiores ad nam consequatur. Doloribus est recusandae vel possimus!<br>
+            </strong>
+        </div>
+    </body>
+</html>
